@@ -32,7 +32,7 @@ struct QRButton: View {
                         .padding(10)
                         
                     Text("Search / Scan QR Code")
-                        .font(Font.custom("Avenir", size: 19))
+                        .font((SystemFont.BasicFont))
                     
                     Spacer()
                     

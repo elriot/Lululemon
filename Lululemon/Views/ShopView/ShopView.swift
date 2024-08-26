@@ -14,6 +14,7 @@ struct ShopView: View {
                 .padding()
             QRButton()
                 .padding()
+            CategoryCarouselRowListView()
             Spacer()
         })
         

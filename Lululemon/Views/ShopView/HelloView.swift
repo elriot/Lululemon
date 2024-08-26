@@ -11,11 +11,11 @@ struct HelloView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 25) {
             Text("Hey there!")
-                .font(Font.custom("Avenir", size: 26))
+                .font(SystemFont.AppFont)
                 .fontWeight(.bold)
             
             Text("We're so glad you're here. This is going to be the start of something great✨")
-                .font(Font.custom("Avenir", size: 19))
+                .font(SystemFont.BasicFont)
             
             Button {
 
@@ -28,7 +28,7 @@ struct HelloView: View {
                         
                     
                     Text("Create an account or Sign In")
-                        .font(Font.custom("Avenir", size: 19))
+                        .font(SystemFont.BasicFont)
                         .fontWeight(.bold)
                         .foregroundStyle(.white)
                 }

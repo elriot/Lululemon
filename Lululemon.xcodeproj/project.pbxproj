@@ -18,6 +18,9 @@
 		F6A0B6EC2C7D3B6400E2AB87 /* HelloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6EB2C7D3B6400E2AB87 /* HelloView.swift */; };
 		F6A0B6EE2C7D3C0700E2AB87 /* QRButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6ED2C7D3C0700E2AB87 /* QRButton.swift */; };
 		F6A0B6F02C7D425100E2AB87 /* ShopVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6EF2C7D425100E2AB87 /* ShopVM.swift */; };
+		F6A0B6F32C7D435C00E2AB87 /* CategoryCarouselRowListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6F22C7D435C00E2AB87 /* CategoryCarouselRowListView.swift */; };
+		F6A0B6F52C7D446C00E2AB87 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6F42C7D446C00E2AB87 /* Extensions.swift */; };
+		F6A0B6F72C7D44E400E2AB87 /* SystemFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6F62C7D44E400E2AB87 /* SystemFont.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,9 @@
 		F6A0B6EB2C7D3B6400E2AB87 /* HelloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloView.swift; sourceTree = "<group>"; };
 		F6A0B6ED2C7D3C0700E2AB87 /* QRButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRButton.swift; sourceTree = "<group>"; };
 		F6A0B6EF2C7D425100E2AB87 /* ShopVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopVM.swift; sourceTree = "<group>"; };
+		F6A0B6F22C7D435C00E2AB87 /* CategoryCarouselRowListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCarouselRowListView.swift; sourceTree = "<group>"; };
+		F6A0B6F42C7D446C00E2AB87 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F6A0B6F62C7D44E400E2AB87 /* SystemFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemFont.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +149,8 @@
 			children = (
 				F6A0B6B52C7D33E000E2AB87 /* LululemonApp.swift */,
 				F6A0B6B72C7D33E000E2AB87 /* ContentView.swift */,
+				F6A0B6F42C7D446C00E2AB87 /* Extensions.swift */,
+				F6A0B6F62C7D44E400E2AB87 /* SystemFont.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -183,8 +191,17 @@
 				F6A0B6E82C7D365600E2AB87 /* ShopView.swift */,
 				F6A0B6EB2C7D3B6400E2AB87 /* HelloView.swift */,
 				F6A0B6ED2C7D3C0700E2AB87 /* QRButton.swift */,
+				F6A0B6F12C7D432300E2AB87 /* CategoryView */,
 			);
 			path = ShopView;
+			sourceTree = "<group>";
+		};
+		F6A0B6F12C7D432300E2AB87 /* CategoryView */ = {
+			isa = PBXGroup;
+			children = (
+				F6A0B6F22C7D435C00E2AB87 /* CategoryCarouselRowListView.swift */,
+			);
+			path = CategoryView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,9 +337,12 @@
 				F6A0B6E92C7D365600E2AB87 /* ShopView.swift in Sources */,
 				F6A0B6EC2C7D3B6400E2AB87 /* HelloView.swift in Sources */,
 				F6A0B6B82C7D33E000E2AB87 /* ContentView.swift in Sources */,
+				F6A0B6F52C7D446C00E2AB87 /* Extensions.swift in Sources */,
 				F6A0B6EE2C7D3C0700E2AB87 /* QRButton.swift in Sources */,
 				F6A0B6F02C7D425100E2AB87 /* ShopVM.swift in Sources */,
 				F6A0B6B62C7D33E000E2AB87 /* LululemonApp.swift in Sources */,
+				F6A0B6F72C7D44E400E2AB87 /* SystemFont.swift in Sources */,
+				F6A0B6F32C7D435C00E2AB87 /* CategoryCarouselRowListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
