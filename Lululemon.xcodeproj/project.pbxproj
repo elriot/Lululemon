@@ -15,6 +15,9 @@
 		F6A0B6D12C7D33E100E2AB87 /* LululemonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6D02C7D33E100E2AB87 /* LululemonUITests.swift */; };
 		F6A0B6D32C7D33E100E2AB87 /* LululemonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6D22C7D33E100E2AB87 /* LululemonUITestsLaunchTests.swift */; };
 		F6A0B6E92C7D365600E2AB87 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6E82C7D365600E2AB87 /* ShopView.swift */; };
+		F6A0B6EC2C7D3B6400E2AB87 /* HelloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6EB2C7D3B6400E2AB87 /* HelloView.swift */; };
+		F6A0B6EE2C7D3C0700E2AB87 /* QRButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6ED2C7D3C0700E2AB87 /* QRButton.swift */; };
+		F6A0B6F02C7D425100E2AB87 /* ShopVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6EF2C7D425100E2AB87 /* ShopVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		F6A0B6D02C7D33E100E2AB87 /* LululemonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LululemonUITests.swift; sourceTree = "<group>"; };
 		F6A0B6D22C7D33E100E2AB87 /* LululemonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LululemonUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F6A0B6E82C7D365600E2AB87 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		F6A0B6EB2C7D3B6400E2AB87 /* HelloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloView.swift; sourceTree = "<group>"; };
+		F6A0B6ED2C7D3C0700E2AB87 /* QRButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRButton.swift; sourceTree = "<group>"; };
+		F6A0B6EF2C7D425100E2AB87 /* ShopVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +165,7 @@
 		F6A0B6E52C7D350B00E2AB87 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				F6A0B6EF2C7D425100E2AB87 /* ShopVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -174,16 +181,10 @@
 			isa = PBXGroup;
 			children = (
 				F6A0B6E82C7D365600E2AB87 /* ShopView.swift */,
-				F6A0B6EA2C7D36DC00E2AB87 /* New Group */,
+				F6A0B6EB2C7D3B6400E2AB87 /* HelloView.swift */,
+				F6A0B6ED2C7D3C0700E2AB87 /* QRButton.swift */,
 			);
 			path = ShopView;
-			sourceTree = "<group>";
-		};
-		F6A0B6EA2C7D36DC00E2AB87 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,7 +318,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6A0B6E92C7D365600E2AB87 /* ShopView.swift in Sources */,
+				F6A0B6EC2C7D3B6400E2AB87 /* HelloView.swift in Sources */,
 				F6A0B6B82C7D33E000E2AB87 /* ContentView.swift in Sources */,
+				F6A0B6EE2C7D3C0700E2AB87 /* QRButton.swift in Sources */,
+				F6A0B6F02C7D425100E2AB87 /* ShopVM.swift in Sources */,
 				F6A0B6B62C7D33E000E2AB87 /* LululemonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
