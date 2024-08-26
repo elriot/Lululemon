@@ -14,6 +14,7 @@
 		F6A0B6C72C7D33E100E2AB87 /* LululemonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6C62C7D33E100E2AB87 /* LululemonTests.swift */; };
 		F6A0B6D12C7D33E100E2AB87 /* LululemonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6D02C7D33E100E2AB87 /* LululemonUITests.swift */; };
 		F6A0B6D32C7D33E100E2AB87 /* LululemonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6D22C7D33E100E2AB87 /* LululemonUITestsLaunchTests.swift */; };
+		F6A0B6E92C7D365600E2AB87 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6E82C7D365600E2AB87 /* ShopView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		F6A0B6CC2C7D33E100E2AB87 /* LululemonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LululemonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A0B6D02C7D33E100E2AB87 /* LululemonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LululemonUITests.swift; sourceTree = "<group>"; };
 		F6A0B6D22C7D33E100E2AB87 /* LululemonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LululemonUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F6A0B6E82C7D365600E2AB87 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +98,8 @@
 			children = (
 				F6A0B6B92C7D33E100E2AB87 /* Assets.xcassets */,
 				F6A0B6DF2C7D34C700E2AB87 /* App */,
-				F6A0B6E52C7D350B00E2AB87 /* ViewModels */,
 				F6A0B6E32C7D34F800E2AB87 /* Views */,
+				F6A0B6E52C7D350B00E2AB87 /* ViewModels */,
 				F6A0B6E12C7D34ED00E2AB87 /* Models */,
 				F6A0B6E62C7D351A00E2AB87 /* SampleJSONs */,
 				F6A0B6BB2C7D33E100E2AB87 /* Preview Content */,
@@ -149,6 +151,7 @@
 		F6A0B6E32C7D34F800E2AB87 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F6A0B6E72C7D363400E2AB87 /* ShopView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -165,6 +168,22 @@
 			children = (
 			);
 			path = SampleJSONs;
+			sourceTree = "<group>";
+		};
+		F6A0B6E72C7D363400E2AB87 /* ShopView */ = {
+			isa = PBXGroup;
+			children = (
+				F6A0B6E82C7D365600E2AB87 /* ShopView.swift */,
+				F6A0B6EA2C7D36DC00E2AB87 /* New Group */,
+			);
+			path = ShopView;
+			sourceTree = "<group>";
+		};
+		F6A0B6EA2C7D36DC00E2AB87 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6A0B6E92C7D365600E2AB87 /* ShopView.swift in Sources */,
 				F6A0B6B82C7D33E000E2AB87 /* ContentView.swift in Sources */,
 				F6A0B6B62C7D33E000E2AB87 /* LululemonApp.swift in Sources */,
 			);
