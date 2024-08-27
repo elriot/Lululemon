@@ -22,8 +22,9 @@
 		F6A0B6F52C7D446C00E2AB87 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6F42C7D446C00E2AB87 /* Extensions.swift */; };
 		F6A0B6F72C7D44E400E2AB87 /* SystemFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6F62C7D44E400E2AB87 /* SystemFont.swift */; };
 		F6A0B6F92C7D486700E2AB87 /* CategoryCarouselRowItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6F82C7D486700E2AB87 /* CategoryCarouselRowItemView.swift */; };
-		F6A0B6FC2C7D511F00E2AB87 /* ForYouView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6FB2C7D511F00E2AB87 /* ForYouView.swift */; };
+		F6A0B6FC2C7D511F00E2AB87 /* ForYouListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6FB2C7D511F00E2AB87 /* ForYouListItemView.swift */; };
 		F6A0B6FE2C7D51DA00E2AB87 /* ShopCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6FD2C7D51DA00E2AB87 /* ShopCategory.swift */; };
+		F6A0B7002C7D935C00E2AB87 /* ForYouListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6FF2C7D935C00E2AB87 /* ForYouListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +63,9 @@
 		F6A0B6F42C7D446C00E2AB87 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F6A0B6F62C7D44E400E2AB87 /* SystemFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemFont.swift; sourceTree = "<group>"; };
 		F6A0B6F82C7D486700E2AB87 /* CategoryCarouselRowItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCarouselRowItemView.swift; sourceTree = "<group>"; };
-		F6A0B6FB2C7D511F00E2AB87 /* ForYouView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouView.swift; sourceTree = "<group>"; };
+		F6A0B6FB2C7D511F00E2AB87 /* ForYouListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouListItemView.swift; sourceTree = "<group>"; };
 		F6A0B6FD2C7D51DA00E2AB87 /* ShopCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCategory.swift; sourceTree = "<group>"; };
+		F6A0B6FF2C7D935C00E2AB87 /* ForYouListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,7 +218,8 @@
 		F6A0B6FA2C7D50FC00E2AB87 /* ForYouView */ = {
 			isa = PBXGroup;
 			children = (
-				F6A0B6FB2C7D511F00E2AB87 /* ForYouView.swift */,
+				F6A0B6FF2C7D935C00E2AB87 /* ForYouListView.swift */,
+				F6A0B6FB2C7D511F00E2AB87 /* ForYouListItemView.swift */,
 			);
 			path = ForYouView;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				F6A0B6E92C7D365600E2AB87 /* ShopView.swift in Sources */,
 				F6A0B6FE2C7D51DA00E2AB87 /* ShopCategory.swift in Sources */,
 				F6A0B6EC2C7D3B6400E2AB87 /* HelloView.swift in Sources */,
+				F6A0B7002C7D935C00E2AB87 /* ForYouListView.swift in Sources */,
 				F6A0B6B82C7D33E000E2AB87 /* ContentView.swift in Sources */,
 				F6A0B6F52C7D446C00E2AB87 /* Extensions.swift in Sources */,
 				F6A0B6F92C7D486700E2AB87 /* CategoryCarouselRowItemView.swift in Sources */,
@@ -362,7 +366,7 @@
 				F6A0B6B62C7D33E000E2AB87 /* LululemonApp.swift in Sources */,
 				F6A0B6F72C7D44E400E2AB87 /* SystemFont.swift in Sources */,
 				F6A0B6F32C7D435C00E2AB87 /* CategoryCarouselRowListView.swift in Sources */,
-				F6A0B6FC2C7D511F00E2AB87 /* ForYouView.swift in Sources */,
+				F6A0B6FC2C7D511F00E2AB87 /* ForYouListItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,15 +9,15 @@ import SwiftUI
 
 struct ShopView: View {
     var body: some View {
-        VStack(alignment: .center, spacing: 30, content: {
+        VStack(alignment: .center, spacing: 20, content: {
             HelloView()
-                .padding()
+
             QRButton()
-                .padding()
+
             CategoryCarouselRowListView()
-                .padding()
             Spacer()
         })
+        .padding()
         
     }
 }

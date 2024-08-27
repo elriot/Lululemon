@@ -9,14 +9,16 @@ import SwiftUI
 
 struct HelloView: View {
     var body: some View {
-        VStack(alignment: .leading, spacing: 25) {
+        VStack(alignment: .leading, spacing: 35) {
             Text("Hey there!")
                 .font(SystemFont.AppFont)
                 .fontWeight(.bold)
             
             Text("We're so glad you're here. This is going to be the start of something great✨")
                 .font(SystemFont.BasicFont)
-            
+                .multilineTextAlignment(.leading)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                
             Button {
 
             } label: {
