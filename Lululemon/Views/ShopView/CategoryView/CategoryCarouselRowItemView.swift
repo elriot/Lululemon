@@ -12,10 +12,12 @@ struct CategoryCarouselRowItemView: View {
     let index: Int
     let isActive: Bool
     @Binding var clickedIndex: Int
+    @Binding var selectedCategory: ShopCategory
     
     var body: some View {
         Button {
             clickedIndex = self.index
+            selectedCategory = ShopCategory(rawValue: title) ?? .unknown
         } label: {
             Text(title)
                 .font(SystemFont.BasicFont)
@@ -29,11 +31,9 @@ struct CategoryCarouselRowItemView: View {
                     alignment: .bottom
                 )
         }
-//        .frame(height: 50)
-//        .border
     }
 }
 
 #Preview(traits: .sizeThatFitsLayout) {
-    CategoryCarouselRowItemView(title: "For you", index: 0, isActive: true, clickedIndex: .constant(0))
+    CategoryCarouselRowItemView(title: "For you", index: 0, isActive: true, clickedIndex: .constant(0), selectedCategory: .constant(ShopCategory.forYou))
 }
