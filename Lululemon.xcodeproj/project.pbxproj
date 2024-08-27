@@ -14,6 +14,19 @@
 		F6A0B6C72C7D33E100E2AB87 /* LululemonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6C62C7D33E100E2AB87 /* LululemonTests.swift */; };
 		F6A0B6D12C7D33E100E2AB87 /* LululemonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6D02C7D33E100E2AB87 /* LululemonUITests.swift */; };
 		F6A0B6D32C7D33E100E2AB87 /* LululemonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6D22C7D33E100E2AB87 /* LululemonUITestsLaunchTests.swift */; };
+		F6A0B6E92C7D365600E2AB87 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6E82C7D365600E2AB87 /* ShopView.swift */; };
+		F6A0B6EC2C7D3B6400E2AB87 /* HelloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6EB2C7D3B6400E2AB87 /* HelloView.swift */; };
+		F6A0B6EE2C7D3C0700E2AB87 /* QRButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6ED2C7D3C0700E2AB87 /* QRButton.swift */; };
+		F6A0B6F02C7D425100E2AB87 /* ShopVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6EF2C7D425100E2AB87 /* ShopVM.swift */; };
+		F6A0B6F32C7D435C00E2AB87 /* CategoryCarouselRowListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6F22C7D435C00E2AB87 /* CategoryCarouselRowListView.swift */; };
+		F6A0B6F52C7D446C00E2AB87 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6F42C7D446C00E2AB87 /* Extensions.swift */; };
+		F6A0B6F72C7D44E400E2AB87 /* SystemFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6F62C7D44E400E2AB87 /* SystemFont.swift */; };
+		F6A0B6F92C7D486700E2AB87 /* CategoryCarouselRowItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6F82C7D486700E2AB87 /* CategoryCarouselRowItemView.swift */; };
+		F6A0B6FC2C7D511F00E2AB87 /* ForYouListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6FB2C7D511F00E2AB87 /* ForYouListItemView.swift */; };
+		F6A0B6FE2C7D51DA00E2AB87 /* ShopCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6FD2C7D51DA00E2AB87 /* ShopCategory.swift */; };
+		F6A0B7002C7D935C00E2AB87 /* ForYouListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6FF2C7D935C00E2AB87 /* ForYouListView.swift */; };
+		F6FFCF942C7E34550029C9D2 /* ForYouBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FFCF932C7E34550029C9D2 /* ForYouBottomView.swift */; };
+		F6FFCF962C7E3B160029C9D2 /* ForYouView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FFCF952C7E3B160029C9D2 /* ForYouView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +57,19 @@
 		F6A0B6CC2C7D33E100E2AB87 /* LululemonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LululemonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A0B6D02C7D33E100E2AB87 /* LululemonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LululemonUITests.swift; sourceTree = "<group>"; };
 		F6A0B6D22C7D33E100E2AB87 /* LululemonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LululemonUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F6A0B6E82C7D365600E2AB87 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		F6A0B6EB2C7D3B6400E2AB87 /* HelloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloView.swift; sourceTree = "<group>"; };
+		F6A0B6ED2C7D3C0700E2AB87 /* QRButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRButton.swift; sourceTree = "<group>"; };
+		F6A0B6EF2C7D425100E2AB87 /* ShopVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopVM.swift; sourceTree = "<group>"; };
+		F6A0B6F22C7D435C00E2AB87 /* CategoryCarouselRowListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCarouselRowListView.swift; sourceTree = "<group>"; };
+		F6A0B6F42C7D446C00E2AB87 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F6A0B6F62C7D44E400E2AB87 /* SystemFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemFont.swift; sourceTree = "<group>"; };
+		F6A0B6F82C7D486700E2AB87 /* CategoryCarouselRowItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCarouselRowItemView.swift; sourceTree = "<group>"; };
+		F6A0B6FB2C7D511F00E2AB87 /* ForYouListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouListItemView.swift; sourceTree = "<group>"; };
+		F6A0B6FD2C7D51DA00E2AB87 /* ShopCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCategory.swift; sourceTree = "<group>"; };
+		F6A0B6FF2C7D935C00E2AB87 /* ForYouListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouListView.swift; sourceTree = "<group>"; };
+		F6FFCF932C7E34550029C9D2 /* ForYouBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouBottomView.swift; sourceTree = "<group>"; };
+		F6FFCF952C7E3B160029C9D2 /* ForYouView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +122,8 @@
 			children = (
 				F6A0B6B92C7D33E100E2AB87 /* Assets.xcassets */,
 				F6A0B6DF2C7D34C700E2AB87 /* App */,
-				F6A0B6E52C7D350B00E2AB87 /* ViewModels */,
 				F6A0B6E32C7D34F800E2AB87 /* Views */,
+				F6A0B6E52C7D350B00E2AB87 /* ViewModels */,
 				F6A0B6E12C7D34ED00E2AB87 /* Models */,
 				F6A0B6E62C7D351A00E2AB87 /* SampleJSONs */,
 				F6A0B6BB2C7D33E100E2AB87 /* Preview Content */,
@@ -135,6 +161,8 @@
 			children = (
 				F6A0B6B52C7D33E000E2AB87 /* LululemonApp.swift */,
 				F6A0B6B72C7D33E000E2AB87 /* ContentView.swift */,
+				F6A0B6F42C7D446C00E2AB87 /* Extensions.swift */,
+				F6A0B6F62C7D44E400E2AB87 /* SystemFont.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -142,6 +170,7 @@
 		F6A0B6E12C7D34ED00E2AB87 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F6A0B6FD2C7D51DA00E2AB87 /* ShopCategory.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -149,6 +178,7 @@
 		F6A0B6E32C7D34F800E2AB87 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F6A0B6E72C7D363400E2AB87 /* ShopView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -156,6 +186,7 @@
 		F6A0B6E52C7D350B00E2AB87 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				F6A0B6EF2C7D425100E2AB87 /* ShopVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -165,6 +196,38 @@
 			children = (
 			);
 			path = SampleJSONs;
+			sourceTree = "<group>";
+		};
+		F6A0B6E72C7D363400E2AB87 /* ShopView */ = {
+			isa = PBXGroup;
+			children = (
+				F6A0B6E82C7D365600E2AB87 /* ShopView.swift */,
+				F6A0B6EB2C7D3B6400E2AB87 /* HelloView.swift */,
+				F6A0B6ED2C7D3C0700E2AB87 /* QRButton.swift */,
+				F6A0B6F12C7D432300E2AB87 /* CategoryView */,
+			);
+			path = ShopView;
+			sourceTree = "<group>";
+		};
+		F6A0B6F12C7D432300E2AB87 /* CategoryView */ = {
+			isa = PBXGroup;
+			children = (
+				F6A0B6F22C7D435C00E2AB87 /* CategoryCarouselRowListView.swift */,
+				F6A0B6F82C7D486700E2AB87 /* CategoryCarouselRowItemView.swift */,
+				F6A0B6FA2C7D50FC00E2AB87 /* ForYouView */,
+			);
+			path = CategoryView;
+			sourceTree = "<group>";
+		};
+		F6A0B6FA2C7D50FC00E2AB87 /* ForYouView */ = {
+			isa = PBXGroup;
+			children = (
+				F6FFCF952C7E3B160029C9D2 /* ForYouView.swift */,
+				F6A0B6FF2C7D935C00E2AB87 /* ForYouListView.swift */,
+				F6A0B6FB2C7D511F00E2AB87 /* ForYouListItemView.swift */,
+				F6FFCF932C7E34550029C9D2 /* ForYouBottomView.swift */,
+			);
+			path = ForYouView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,8 +360,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6A0B6E92C7D365600E2AB87 /* ShopView.swift in Sources */,
+				F6A0B6FE2C7D51DA00E2AB87 /* ShopCategory.swift in Sources */,
+				F6A0B6EC2C7D3B6400E2AB87 /* HelloView.swift in Sources */,
+				F6A0B7002C7D935C00E2AB87 /* ForYouListView.swift in Sources */,
 				F6A0B6B82C7D33E000E2AB87 /* ContentView.swift in Sources */,
+				F6A0B6F52C7D446C00E2AB87 /* Extensions.swift in Sources */,
+				F6A0B6F92C7D486700E2AB87 /* CategoryCarouselRowItemView.swift in Sources */,
+				F6A0B6EE2C7D3C0700E2AB87 /* QRButton.swift in Sources */,
+				F6FFCF962C7E3B160029C9D2 /* ForYouView.swift in Sources */,
+				F6A0B6F02C7D425100E2AB87 /* ShopVM.swift in Sources */,
+				F6FFCF942C7E34550029C9D2 /* ForYouBottomView.swift in Sources */,
 				F6A0B6B62C7D33E000E2AB87 /* LululemonApp.swift in Sources */,
+				F6A0B6F72C7D44E400E2AB87 /* SystemFont.swift in Sources */,
+				F6A0B6F32C7D435C00E2AB87 /* CategoryCarouselRowListView.swift in Sources */,
+				F6A0B6FC2C7D511F00E2AB87 /* ForYouListItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
