@@ -8,12 +8,19 @@
 import SwiftUI
 
 struct CategoryCarouselRowListView: View {
+    @State var clickedIndex = 0
+    
     var list = ["For You", "Team Canada", "Women", "Men", "Accessories", "Shoes"]
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false){
-            HStack(spacing: 19) {
+            HStack(spacing: 20) {
                 ForEach(0..<list.count, id: \.self) { index in
-                    Text(list[index])
+                    CategoryCarouselRowItemView(
+                        title: list[index], 
+                        index: index,
+                        isActive: index==clickedIndex,
+                        clickedIndex: $clickedIndex
+                    )
                 }
             }
         }

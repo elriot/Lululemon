@@ -21,6 +21,7 @@
 		F6A0B6F32C7D435C00E2AB87 /* CategoryCarouselRowListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6F22C7D435C00E2AB87 /* CategoryCarouselRowListView.swift */; };
 		F6A0B6F52C7D446C00E2AB87 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6F42C7D446C00E2AB87 /* Extensions.swift */; };
 		F6A0B6F72C7D44E400E2AB87 /* SystemFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6F62C7D44E400E2AB87 /* SystemFont.swift */; };
+		F6A0B6F92C7D486700E2AB87 /* CategoryCarouselRowItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6F82C7D486700E2AB87 /* CategoryCarouselRowItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		F6A0B6F22C7D435C00E2AB87 /* CategoryCarouselRowListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCarouselRowListView.swift; sourceTree = "<group>"; };
 		F6A0B6F42C7D446C00E2AB87 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F6A0B6F62C7D44E400E2AB87 /* SystemFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemFont.swift; sourceTree = "<group>"; };
+		F6A0B6F82C7D486700E2AB87 /* CategoryCarouselRowItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCarouselRowItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				F6A0B6F22C7D435C00E2AB87 /* CategoryCarouselRowListView.swift */,
+				F6A0B6F82C7D486700E2AB87 /* CategoryCarouselRowItemView.swift */,
 			);
 			path = CategoryView;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				F6A0B6EC2C7D3B6400E2AB87 /* HelloView.swift in Sources */,
 				F6A0B6B82C7D33E000E2AB87 /* ContentView.swift in Sources */,
 				F6A0B6F52C7D446C00E2AB87 /* Extensions.swift in Sources */,
+				F6A0B6F92C7D486700E2AB87 /* CategoryCarouselRowItemView.swift in Sources */,
 				F6A0B6EE2C7D3C0700E2AB87 /* QRButton.swift in Sources */,
 				F6A0B6F02C7D425100E2AB87 /* ShopVM.swift in Sources */,
 				F6A0B6B62C7D33E000E2AB87 /* LululemonApp.swift in Sources */,
