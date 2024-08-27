@@ -21,24 +21,24 @@ struct ForYouListView: View {
     
     var content: some View {
         VStack(spacing: 50){
-            ForYouListItemView(img: "Bag", title: "", content: "Must-have accessories, reimagined in new Cactus Material. Only members can shop first.", bottomText: "Join Membership Now")
+            ForYouListItemView(img: "Bag".lowercased(), title: "", content: "Must-have accessories, reimagined in new Cactus Material. Only members can shop first.", bottomText: "Join Membership Now")
             
             ForYouListItemView(
-                img: "BackToSchool",
+                img: "BackToSchool".lowercased(),
                 title: "",
                 content: "Don't procrastinate on finding head-to-toe comfort for school.",
                 bottomText: "Shop Back to School"
             )
             
             ForYouListItemView(
-                img: "MixAndMatch",
+                img: "MixAndMatch".lowercased(),
                 title: "Mix and Match Outfits",
                 content: "Back to school means new outfits. Create yours easily with our interactive experience.",
                 bottomText: "Try It Out"
             )
             
             ForYouListItemView(
-                img: "MadeTooMuch",
+                img: "MadeTooMuch".lowercased(),
                 title: "",
                 content: "Shop We Made Too Much",
                 bottomText: "Shop WE Made Too Much"
