@@ -11,11 +11,12 @@ import MapKit
 struct ShopDetailsView: View {
     @Binding var mapSelection: MKMapItem?
     @Binding var show: Bool
+    @Binding var getDirections: Bool
     @State private var lookAroundScene: MKLookAroundScene?
     
     var body: some View {
         VStack {
-            HStack {
+            HStack(alignment: .top) {
                 VStack(alignment: .leading) {
                     Text(mapSelection?.placemark.name ?? "lululemon")
                         .font(SystemFont.AppFont)
@@ -26,6 +27,11 @@ struct ShopDetailsView: View {
                         .foregroundStyle(.gray)
                         .lineLimit(2)
                         .padding(.trailing)
+                    
+                    if let phone = mapSelection?.phoneNumber {
+                        Text(phone)
+                            .font(SystemFont.captionFont)
+                    }
                 }
                 Spacer()
                 
@@ -39,6 +45,8 @@ struct ShopDetailsView: View {
                         .foregroundColor(.gray)
                 }
             }
+            .padding()
+
             if let scene = lookAroundScene {
                 LookAroundPreview(initialScene: scene)
                     .frame(height: 200)
@@ -47,12 +55,41 @@ struct ShopDetailsView: View {
             } else {
                 ContentUnavailableView("No preview available", systemImage: "eye.slash")
             }
+            
+            HStack(spacing: 24) {
+                Button {
+                    if let mapSelection {
+                        mapSelection.openInMaps()
+                    }
+                } label: {
+                    Text("Open in Maps")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .frame(width: 170, height: 48)
+                        .background(.cyan)
+                        .cornerRadius(22)
+                    
+                    Button {
+                        getDirections = true
+                        show = false
+                    } label: {
+                        Text("Get Direction")
+                            .font(.headline)
+                            .foregroundStyle(.white)
+                            .frame(width: 170, height: 48)
+                            .background(.mint)
+                            .cornerRadius(22)
+                    }
+                }
+            }
+            
         }
-        .padding()
         .onAppear {
+//            print("onAppear fetch")
             fetchLookAroundPreview()
         }
         .onChange(of: mapSelection) { oldValue, newValue in
+//            print("onChange fetch")
             fetchLookAroundPreview()
         }
         
@@ -72,5 +109,5 @@ extension ShopDetailsView {
 }
 
 #Preview {
-    ShopDetailsView(mapSelection: .constant(nil), show: .constant(false))
+    ShopDetailsView(mapSelection: .constant(nil), show: .constant(false), getDirections: .constant(false))
 }

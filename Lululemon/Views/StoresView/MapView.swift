@@ -15,6 +15,7 @@ struct MapView: View {
     @State private var results = [MKMapItem]()
     @State private var mapSelection: MKMapItem?
     @State private var showDetails = false
+    @State private var getDirections = false
     
     var body: some View {
         Map(position: $cameraPosition, selection: $mapSelection) {
@@ -47,6 +48,7 @@ struct MapView: View {
         .onChange(of: searchText) { oldValue, newValue in
             Task {
                 await searchPlaces()
+                dump("result 1  : \(results)")
             }
         }
         .onChange(of: mapSelection) { oldValue, newValue in
@@ -55,12 +57,13 @@ struct MapView: View {
         .onAppear {
             Task {
                 await searchPlaces()
+                dump("result 2 : \(results)")
             }
         }
         .sheet(isPresented: $showDetails, content: {
-            ShopDetailsView(mapSelection: $mapSelection, show: $showDetails)
-                .presentationDetents([.height(340)])
-                .presentationBackgroundInteraction(.enabled(upThrough: .height(340)))
+            ShopDetailsView(mapSelection: $mapSelection, show: $showDetails, getDirections: $getDirections)
+                .presentationDetents([.height(400)])
+                .presentationBackgroundInteraction(.enabled(upThrough: .height(400)))
                 .presentationCornerRadius(12)
         })
 
@@ -70,12 +73,13 @@ struct MapView: View {
 
 extension MapView {
     func searchPlaces() async {
-        print("searchPlaces")
+//        print("searchPlaces")
         let request = MKLocalSearch.Request()
         request.naturalLanguageQuery = searchText
         request.region = .userRegion
         let results = try? await MKLocalSearch(request: request).start()
         self.results = results?.mapItems ?? []
+//        dump(self.results)
     }
 }
 extension CLLocationCoordinate2D {
