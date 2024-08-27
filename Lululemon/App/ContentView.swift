@@ -9,11 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ScrollView(.vertical) {
-            HStack {
-                ShopView()
+        TabView {
+            ScrollView(.vertical) {
+                HStack {
+                    ShopView()
+                }
             }
+            .tabItem {
+                Image(systemName: "hanger")
+                Text("Shop")
+            }
+            
+            
         }
+        
 //        .lineLimit(nil)
     }
 }
