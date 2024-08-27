@@ -31,6 +31,7 @@
 		F6FFCF9E2C7E43730029C9D2 /* ClassesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FFCF9D2C7E43730029C9D2 /* ClassesView.swift */; };
 		F6FFCFA02C7E43820029C9D2 /* WishlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FFCF9F2C7E43820029C9D2 /* WishlistView.swift */; };
 		F6FFCFA22C7E438F0029C9D2 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FFCFA12C7E438F0029C9D2 /* AccountView.swift */; };
+		F6FFCFA42C7E54E90029C9D2 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FFCFA32C7E54E90029C9D2 /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		F6FFCF9D2C7E43730029C9D2 /* ClassesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesView.swift; sourceTree = "<group>"; };
 		F6FFCF9F2C7E43820029C9D2 /* WishlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistView.swift; sourceTree = "<group>"; };
 		F6FFCFA12C7E438F0029C9D2 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		F6FFCFA32C7E54E90029C9D2 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 				F6A0B6B72C7D33E000E2AB87 /* ContentView.swift */,
 				F6A0B6F42C7D446C00E2AB87 /* Extensions.swift */,
 				F6A0B6F62C7D44E400E2AB87 /* SystemFont.swift */,
+				F6FFCFA32C7E54E90029C9D2 /* Common.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -186,8 +189,8 @@
 		F6A0B6E32C7D34F800E2AB87 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F6FFCF972C7E42EC0029C9D2 /* StoresView */,
 				F6A0B6E72C7D363400E2AB87 /* ShopView */,
+				F6FFCF972C7E42EC0029C9D2 /* StoresView */,
 				F6FFCF9A2C7E430A0029C9D2 /* ClassesView */,
 				F6FFCF9B2C7E43110029C9D2 /* WishListView */,
 				F6FFCF9C2C7E43400029C9D2 /* AccountView */,
@@ -417,6 +420,7 @@
 				F6A0B6F02C7D425100E2AB87 /* ShopVM.swift in Sources */,
 				F6FFCF942C7E34550029C9D2 /* ForYouBottomView.swift in Sources */,
 				F6A0B6B62C7D33E000E2AB87 /* LululemonApp.swift in Sources */,
+				F6FFCFA42C7E54E90029C9D2 /* Common.swift in Sources */,
 				F6FFCFA22C7E438F0029C9D2 /* AccountView.swift in Sources */,
 				F6FFCFA02C7E43820029C9D2 /* WishlistView.swift in Sources */,
 				F6A0B6F72C7D44E400E2AB87 /* SystemFont.swift in Sources */,

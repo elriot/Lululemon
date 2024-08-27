@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct StoresView: View {
+    init() {
+        configureNavigationBarAppearance()
+    }
     var body: some View {
-        Text("Stores")
+        NavigationView {
+            VStack(alignment: .leading) {
+                Text("Store")
+                Text("Sdfs")
+                Spacer()
+            }
+            .navigationTitle("Find a Store")
+            .navigationBarTitleDisplayMode(.inline)
+        }
     }
 }
 

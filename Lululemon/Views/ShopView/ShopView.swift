@@ -9,10 +9,7 @@ import SwiftUI
 
 struct ShopView: View {
     init() {
-        let appearance = UINavigationBarAppearance()
-        appearance.configureWithOpaqueBackground()
-        UINavigationBar.appearance().standardAppearance = appearance
-        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        configureNavigationBarAppearance()
     }
     
     var body: some View {
