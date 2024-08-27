@@ -11,6 +11,7 @@ import MapKit
 struct ShopDetailsView: View {
     @Binding var mapSelection: MKMapItem?
     @Binding var show: Bool
+    @State private var lookAroundScene: MKLookAroundScene?
     
     var body: some View {
         VStack {
@@ -38,9 +39,35 @@ struct ShopDetailsView: View {
                         .foregroundColor(.gray)
                 }
             }
-            Spacer()
+            if let scene = lookAroundScene {
+                LookAroundPreview(initialScene: scene)
+                    .frame(height: 200)
+                    .cornerRadius(12)
+                    .padding()
+            } else {
+                ContentUnavailableView("No preview available", systemImage: "eye.slash")
+            }
         }
         .padding()
+        .onAppear {
+            fetchLookAroundPreview()
+        }
+        .onChange(of: mapSelection) { oldValue, newValue in
+            fetchLookAroundPreview()
+        }
+        
+    }
+}
+
+extension ShopDetailsView {
+    func fetchLookAroundPreview() {
+        if let mapSelection {
+            lookAroundScene = nil
+            Task {
+                let request = MKLookAroundSceneRequest(mapItem: mapSelection)
+                lookAroundScene = try? await request.scene
+            }
+        }
     }
 }
 
