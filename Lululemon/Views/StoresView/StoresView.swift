@@ -8,15 +8,21 @@
 import SwiftUI
 
 struct StoresView: View {
+    @State var text: String = ""
+    
     init() {
         configureNavigationBarAppearance()
     }
+    
     var body: some View {
         NavigationView {
-            VStack(alignment: .leading) {
-                Text("Store")
-                Text("Sdfs")
-                Spacer()
+            VStack(alignment: .leading, spacing: 20) {
+                Divider()
+                SearchTextField(placeholder: "Find your nearest store", text: $text)
+                
+                Divider()
+                
+                MapView()
             }
             .navigationTitle("Find a Store")
             .navigationBarTitleDisplayMode(.inline)
