@@ -27,7 +27,7 @@ struct CategoryCarouselRowItemView: View {
                 .overlay(
                     Rectangle()
                         .frame(height: 2)
-                        .foregroundColor(isActive ? .darkRed : .clear),
+                        .foregroundColor(isActive ? .darkred : .clear),
                     alignment: .bottom
                 )
         }

@@ -24,11 +24,10 @@ struct HelloView: View {
             } label: {
                 ZStack {
                     Rectangle()
-                        .frame(maxHeight: 50)
+                        .frame(height: 50)
                         .foregroundColor(.black)
                         .cornerRadius(10)
                         
-                    
                     Text("Create an account or Sign In")
                         .font(SystemFont.BasicFont)
                         .fontWeight(.bold)

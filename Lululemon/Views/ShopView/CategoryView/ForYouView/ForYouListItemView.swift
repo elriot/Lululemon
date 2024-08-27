@@ -21,40 +21,43 @@ struct ForYouListItemView: View {
                 Image(img)
                     .resizable()
                     .scaledToFit()
-                    .imageScale(.medium)
                 
                 VStack(spacing: 20) {
                     VStack(alignment: .leading, spacing: 10) {
-                        Text(title)
-                            .font(SystemFont.MiniTitle)
-                            .fontWeight(.semibold)
+                        if title != "" {
+                            Text(title)
+                                .font(SystemFont.MiniTitle)
+                                .fontWeight(.semibold)
+                        }
                         
                         Text(content)
                             .font(SystemFont.captionFont)
-                            .foregroundColor(.darkGray)
+                            .foregroundColor(.darkgray)
                         
                         HStack {
                             Text(bottomText)
-                                .font(SystemFont.captionFont)
+                                .font(SystemFont.semiBasicFont)
                                 .fontWeight(.semibold)
                                 
                                 
                             Spacer()
-                            Image(systemName: "arrow.right")
+                            Image(systemName: "chevron.right")
                                 .foregroundColor(.black)
                         }
                     }
                 }
                 .padding()
+                
             }
             .cornerRadius(10)
+            
         }
         .buttonStyle(PlainButtonStyle())
         .overlay(
             RoundedRectangle(cornerRadius: 10)
                 .stroke(Color.gray.opacity(0.3), lineWidth: 2)
-//                .shadow(color: .gray.opacity(0.7), radius: 10, x: 0, y: 2)
         )
+        
     }
 }
 

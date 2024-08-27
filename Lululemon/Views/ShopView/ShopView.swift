@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ShopView: View {
     var body: some View {
-        VStack(alignment: .center, spacing: 20, content: {
+        VStack(alignment: .center, spacing: 50, content: {
             HelloView()
 
             QRButton()

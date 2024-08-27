@@ -34,9 +34,9 @@ struct CategoryCarouselRowListView: View {
             Group {
                 switch selectedCategory {
                 case .forYou:
-                    ForYouListView()
+                    ForYouView()
                 case .teamCanada:
-                    ForYouListView()
+                    ForYouView()
                 case .women:
                     Text("women")
                 case .men:

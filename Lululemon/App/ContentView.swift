@@ -14,7 +14,7 @@ struct ContentView: View {
                 ShopView()
             }
         }
-        .lineLimit(nil)
+//        .lineLimit(nil)
     }
 }
 
