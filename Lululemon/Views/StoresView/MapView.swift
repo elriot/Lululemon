@@ -4,6 +4,7 @@
 //
 //  Created by SOOPIN KIM on 2024-08-27.
 //
+// https://www.youtube.com/watch?v=gy6rp_pJmbo
 
 import SwiftUI
 import MapKit
@@ -12,42 +13,30 @@ struct MapView: View {
     let searchText: String
     @State private var cameraPosition: MapCameraPosition = .region(.userRegion)
     @State private var results = [MKMapItem]()
+    @State private var mapSelection: MKMapItem?
+    @State private var showDetails = false
     
     var body: some View {
-        Map(position: $cameraPosition) {
+        Map(position: $cameraPosition, selection: $mapSelection) {
             UserAnnotation()
             
             if results.count > 0 {
                 ForEach(results, id:\.self) { item in
                     let placemark = item.placemark
                     Annotation("", coordinate: placemark.coordinate) {
-                        Image("logo")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 40)
+                        if item == mapSelection {
+                            Image("logo")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 60)
+                        } else {
+                            Image("logo")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 40)
+                        }
                     }
                 }
-            } else {
-//                Annotation("Downtown Store", coordinate: .downtownLocation) {
-//                    Image("logo")
-//                        .resizable()
-//                        .scaledToFit()
-//                        .frame(width: 40)
-//                }
-//                
-//                Annotation("W.Geogia Store", coordinate: .westGeogiaLocation) {
-//                    Image("logo")
-//                        .resizable()
-//                        .scaledToFit()
-//                        .frame(width: 40)
-//                }
-//                
-//                Annotation("Metrotown Store", coordinate: .metrotownLocation) {
-//                    Image("logo")
-//                        .resizable()
-//                        .scaledToFit()
-//                        .frame(width: 40)
-//                }
             }
         }
         .mapControls {
@@ -55,16 +44,26 @@ struct MapView: View {
             MapPitchToggle()
             MapUserLocationButton()
         }
-        .onChange(of: searchText) { prevValue, newValue in
+        .onChange(of: searchText) { oldValue, newValue in
             Task {
                 await searchPlaces()
             }
+        }
+        .onChange(of: mapSelection) { oldValue, newValue in
+            showDetails = newValue != nil
         }
         .onAppear {
             Task {
                 await searchPlaces()
             }
         }
+        .sheet(isPresented: $showDetails, content: {
+            ShopDetailsView(mapSelection: $mapSelection, show: $showDetails)
+                .presentationDetents([.height(340)])
+                .presentationBackgroundInteraction(.enabled(upThrough: .height(340)))
+                .presentationCornerRadius(12)
+        })
+
 
     }
 }
@@ -103,3 +102,24 @@ extension MKCoordinateRegion {
 #Preview {
     MapView(searchText: "test")
 }
+
+//                Annotation("Downtown Store", coordinate: .downtownLocation) {
+//                    Image("logo")
+//                        .resizable()
+//                        .scaledToFit()
+//                        .frame(width: 40)
+//                }
+//
+//                Annotation("W.Geogia Store", coordinate: .westGeogiaLocation) {
+//                    Image("logo")
+//                        .resizable()
+//                        .scaledToFit()
+//                        .frame(width: 40)
+//                }
+//
+//                Annotation("Metrotown Store", coordinate: .metrotownLocation) {
+//                    Image("logo")
+//                        .resizable()
+//                        .scaledToFit()
+//                        .frame(width: 40)
+//                }
