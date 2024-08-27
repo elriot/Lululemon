@@ -9,8 +9,10 @@ import SwiftUI
 
 struct SearchTextField: View {
     let placeholder: String
+    let action: () -> Void
     @Binding var text: String
     @FocusState private var isFocused: Bool
+    
     
     var body: some View {
         HStack {
@@ -26,6 +28,9 @@ struct SearchTextField: View {
                     .keyboardType(.emailAddress)
                     .background(.clear)
                     .focused($isFocused)
+                    .onSubmit {
+                        action()
+                    }
             }
             
             if isFocused {
@@ -56,5 +61,5 @@ struct SearchTextField: View {
 }
 
 #Preview(traits: .sizeThatFitsLayout) {
-    SearchTextField(placeholder: "Fine your nearest store", text: .constant(""))
+    SearchTextField(placeholder: "Fine your nearest store", action: {}, text: .constant(""))
 }

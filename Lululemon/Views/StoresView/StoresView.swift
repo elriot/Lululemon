@@ -9,20 +9,24 @@ import SwiftUI
 
 struct StoresView: View {
     @State var text: String = ""
+    @State var searchText: String = ""
+    private var lululemon: String = "lululemon"
     
     init() {
         configureNavigationBarAppearance()
     }
-    
+    func submit() {
+        searchText = lululemon + " " + text
+    }
     var body: some View {
         NavigationView {
             VStack(alignment: .leading, spacing: 20) {
                 Divider()
-                SearchTextField(placeholder: "Find your nearest store", text: $text)
+                SearchTextField(placeholder: "Find your nearest store", action: submit, text: $text)
                 
                 Divider()
                 
-                MapView()
+                MapView(searchText: searchText)
             }
             .navigationTitle("Find a Store")
             .navigationBarTitleDisplayMode(.inline)

@@ -9,33 +9,46 @@ import SwiftUI
 import MapKit
 
 struct MapView: View {
+    let searchText: String
     @State private var cameraPosition: MapCameraPosition = .region(.userRegion)
+    @State private var results = [MKMapItem]()
     
     var body: some View {
         Map(position: $cameraPosition) {
-//            Marker("Downtown store", systemImage: "circle.fill", coordinate: .userLocation)
-            
             UserAnnotation()
             
-            Annotation("Downtown Store", coordinate: .downtownLocation) {
-                Image("logo")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 40)
-            }
-            
-            Annotation("W.Geogia Store", coordinate: .westGeogiaLocation) {
-                Image("logo")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 40)
-            }
-            
-            Annotation("Metrotown Store", coordinate: .metrotownLocation) {
-                Image("logo")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 40)
+            if results.count > 0 {
+                ForEach(results, id:\.self) { item in
+                    let placemark = item.placemark
+                    Annotation(placemark.name ?? "", coordinate: placemark.coordinate) {
+                        Image("logo")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 40)
+                    }
+//                    Marker(placemark.name ?? "", coordinate: placemark.coordinate)
+                }
+            } else {
+                Annotation("Downtown Store", coordinate: .downtownLocation) {
+                    Image("logo")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 40)
+                }
+                
+                Annotation("W.Geogia Store", coordinate: .westGeogiaLocation) {
+                    Image("logo")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 40)
+                }
+                
+                Annotation("Metrotown Store", coordinate: .metrotownLocation) {
+                    Image("logo")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 40)
+                }
             }
         }
         .mapControls {
@@ -43,10 +56,26 @@ struct MapView: View {
             MapPitchToggle()
             MapUserLocationButton()
         }
+        .onChange(of: searchText) { prevValue, newValue in
+            Task {
+                await searchPlaces()
+                dump("result: \(results)")
+            }
+        }
 
     }
 }
 
+extension MapView {
+    func searchPlaces() async {
+        print("searchPlaces")
+        let request = MKLocalSearch.Request()
+        request.naturalLanguageQuery = searchText
+        request.region = .userRegion
+        let results = try? await MKLocalSearch(request: request).start()
+        self.results = results?.mapItems ?? []
+    }
+}
 extension CLLocationCoordinate2D {
     static var downtownLocation: CLLocationCoordinate2D {
         return .init(latitude: 49.2832045, longitude: -123.1228603)
@@ -68,5 +97,5 @@ extension MKCoordinateRegion {
 }
 
 #Preview {
-    MapView()
+    MapView(searchText: "test")
 }
