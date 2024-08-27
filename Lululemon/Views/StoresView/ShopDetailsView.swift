@@ -63,21 +63,29 @@ struct ShopDetailsView: View {
                     }
                 } label: {
                     Text("Open in Maps")
-                        .font(.headline)
-                        .foregroundColor(.white)
+                        .font(SystemFont.BasicFont)
+                        .fontWeight(.bold)
+                        .foregroundColor(.luluRed)
                         .frame(width: 170, height: 48)
-                        .background(.cyan)
+                        .background(.white)
                         .cornerRadius(22)
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 22)
+                                .stroke(.luluRed, lineWidth: 1.6)
+                                .foregroundColor(.clear)
+                                
+                        }
                     
                     Button {
                         getDirections = true
                         show = false
                     } label: {
                         Text("Get Direction")
-                            .font(.headline)
+                            .font(SystemFont.BasicFont)
+                            .fontWeight(.bold)
                             .foregroundStyle(.white)
                             .frame(width: 170, height: 48)
-                            .background(.mint)
+                            .background(.luluRed)
                             .cornerRadius(22)
                     }
                 }
