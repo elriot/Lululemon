@@ -9,7 +9,7 @@ import SwiftUI
 
 struct StoresView: View {
     @State var text: String = ""
-    @State var searchText: String = ""
+    @State var searchText: String = "vancouver"
     private var lululemon: String = "lululemon"
     
     init() {
@@ -31,8 +31,12 @@ struct StoresView: View {
             .navigationTitle("Find a Store")
             .navigationBarTitleDisplayMode(.inline)
         }
+        .onAppear {
+            searchText = "lululemon Vancouver"
+        }
     }
 }
+        
 
 #Preview {
     StoresView()

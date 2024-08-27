@@ -20,35 +20,34 @@ struct MapView: View {
             if results.count > 0 {
                 ForEach(results, id:\.self) { item in
                     let placemark = item.placemark
-                    Annotation(placemark.name ?? "", coordinate: placemark.coordinate) {
+                    Annotation("", coordinate: placemark.coordinate) {
                         Image("logo")
                             .resizable()
                             .scaledToFit()
                             .frame(width: 40)
                     }
-//                    Marker(placemark.name ?? "", coordinate: placemark.coordinate)
                 }
             } else {
-                Annotation("Downtown Store", coordinate: .downtownLocation) {
-                    Image("logo")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 40)
-                }
-                
-                Annotation("W.Geogia Store", coordinate: .westGeogiaLocation) {
-                    Image("logo")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 40)
-                }
-                
-                Annotation("Metrotown Store", coordinate: .metrotownLocation) {
-                    Image("logo")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 40)
-                }
+//                Annotation("Downtown Store", coordinate: .downtownLocation) {
+//                    Image("logo")
+//                        .resizable()
+//                        .scaledToFit()
+//                        .frame(width: 40)
+//                }
+//                
+//                Annotation("W.Geogia Store", coordinate: .westGeogiaLocation) {
+//                    Image("logo")
+//                        .resizable()
+//                        .scaledToFit()
+//                        .frame(width: 40)
+//                }
+//                
+//                Annotation("Metrotown Store", coordinate: .metrotownLocation) {
+//                    Image("logo")
+//                        .resizable()
+//                        .scaledToFit()
+//                        .frame(width: 40)
+//                }
             }
         }
         .mapControls {
@@ -59,7 +58,11 @@ struct MapView: View {
         .onChange(of: searchText) { prevValue, newValue in
             Task {
                 await searchPlaces()
-                dump("result: \(results)")
+            }
+        }
+        .onAppear {
+            Task {
+                await searchPlaces()
             }
         }
 
@@ -77,14 +80,15 @@ extension MapView {
     }
 }
 extension CLLocationCoordinate2D {
+    /// sample data
     static var downtownLocation: CLLocationCoordinate2D {
         return .init(latitude: 49.2832045, longitude: -123.1228603)
     }
-
+    /// sample data
     static var metrotownLocation: CLLocationCoordinate2D {
         return .init(latitude: 49.2261456, longitude: -123.0016187)
     }
-    
+    /// sample datas
     static var westGeogiaLocation: CLLocationCoordinate2D {
         return .init(latitude: 49.283204, longitude: -123.1305851)
     }
