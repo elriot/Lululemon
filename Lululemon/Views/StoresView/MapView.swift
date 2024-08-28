@@ -47,7 +47,7 @@ struct MapView: View {
                                 Image("logo")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 60)
+                                    .frame(width: 50)
                         }
                     }
                 } else {
@@ -57,7 +57,7 @@ struct MapView: View {
                             Image("logo")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: isSelected ? 60 : 40)
+                                .frame(width: isSelected ? 50 : 40)
                     }
                 }
             }
@@ -199,8 +199,8 @@ extension MapView {
         routeDisplaying = false
         route = nil
         routeDestination = nil
+        getDirections = false
         results = defaultResults
-        mapSelection = nil
     }
 }
 extension CLLocationCoordinate2D {
