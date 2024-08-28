@@ -8,13 +8,43 @@
 import SwiftUI
 
 struct ContentView: View {
+    init() {
+        configureTabBarAppearance()
+    }
+    
     var body: some View {
-        ScrollView(.vertical) {
-            HStack {
-                ShopView()
-            }
+        TabView {
+            ShopView()
+                .tabItem {
+                    Image(systemName: "hanger")
+                    Text("Shop")
+                }
+            
+            StoresView()
+                .tabItem {
+                    Image(systemName: "mappin.and.ellipse")
+                    Text("Shop")
+                }
+            
+            ClassesView()
+                .tabItem {
+                    Image(systemName: "person.2")
+                    Text("Classes")
+                }
+            
+            WishlistView()
+                .tabItem {
+                    Image(systemName: "heart")
+                    Text("Wish List")
+                }
+            
+            AccountView()
+                .tabItem {
+                    Image(systemName: "person.crop.circle")
+                    Text("Acoount")
+                }
         }
-//        .lineLimit(nil)
+        .accentColor(.black)
     }
 }
 

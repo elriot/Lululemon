@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F679D46C2C7E6EE20027714F /* ForYouItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F679D46B2C7E6EE20027714F /* ForYouItem.swift */; };
+		F679D46E2C7E70380027714F /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F679D46D2C7E70380027714F /* SearchTextField.swift */; };
+		F69A6C142C7E753500F4EC6D /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A6C132C7E753500F4EC6D /* MapView.swift */; };
+		F69A6C162C7E885D00F4EC6D /* ShopDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A6C152C7E885D00F4EC6D /* ShopDetailsView.swift */; };
 		F6A0B6B62C7D33E000E2AB87 /* LululemonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6B52C7D33E000E2AB87 /* LululemonApp.swift */; };
 		F6A0B6B82C7D33E000E2AB87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6B72C7D33E000E2AB87 /* ContentView.swift */; };
 		F6A0B6BA2C7D33E100E2AB87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6A0B6B92C7D33E100E2AB87 /* Assets.xcassets */; };
@@ -27,6 +31,11 @@
 		F6A0B7002C7D935C00E2AB87 /* ForYouListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6FF2C7D935C00E2AB87 /* ForYouListView.swift */; };
 		F6FFCF942C7E34550029C9D2 /* ForYouBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FFCF932C7E34550029C9D2 /* ForYouBottomView.swift */; };
 		F6FFCF962C7E3B160029C9D2 /* ForYouView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FFCF952C7E3B160029C9D2 /* ForYouView.swift */; };
+		F6FFCF992C7E43020029C9D2 /* StoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FFCF982C7E43020029C9D2 /* StoresView.swift */; };
+		F6FFCF9E2C7E43730029C9D2 /* ClassesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FFCF9D2C7E43730029C9D2 /* ClassesView.swift */; };
+		F6FFCFA02C7E43820029C9D2 /* WishlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FFCF9F2C7E43820029C9D2 /* WishlistView.swift */; };
+		F6FFCFA22C7E438F0029C9D2 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FFCFA12C7E438F0029C9D2 /* AccountView.swift */; };
+		F6FFCFA42C7E54E90029C9D2 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FFCFA32C7E54E90029C9D2 /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +56,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F679D46B2C7E6EE20027714F /* ForYouItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouItem.swift; sourceTree = "<group>"; };
+		F679D46D2C7E70380027714F /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		F69A6C132C7E753500F4EC6D /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		F69A6C152C7E885D00F4EC6D /* ShopDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDetailsView.swift; sourceTree = "<group>"; };
 		F6A0B6B22C7D33E000E2AB87 /* Lululemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lululemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A0B6B52C7D33E000E2AB87 /* LululemonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LululemonApp.swift; sourceTree = "<group>"; };
 		F6A0B6B72C7D33E000E2AB87 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,6 +83,11 @@
 		F6A0B6FF2C7D935C00E2AB87 /* ForYouListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouListView.swift; sourceTree = "<group>"; };
 		F6FFCF932C7E34550029C9D2 /* ForYouBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouBottomView.swift; sourceTree = "<group>"; };
 		F6FFCF952C7E3B160029C9D2 /* ForYouView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouView.swift; sourceTree = "<group>"; };
+		F6FFCF982C7E43020029C9D2 /* StoresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoresView.swift; sourceTree = "<group>"; };
+		F6FFCF9D2C7E43730029C9D2 /* ClassesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesView.swift; sourceTree = "<group>"; };
+		F6FFCF9F2C7E43820029C9D2 /* WishlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistView.swift; sourceTree = "<group>"; };
+		F6FFCFA12C7E438F0029C9D2 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		F6FFCFA32C7E54E90029C9D2 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +181,7 @@
 				F6A0B6B72C7D33E000E2AB87 /* ContentView.swift */,
 				F6A0B6F42C7D446C00E2AB87 /* Extensions.swift */,
 				F6A0B6F62C7D44E400E2AB87 /* SystemFont.swift */,
+				F6FFCFA32C7E54E90029C9D2 /* Common.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -171,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				F6A0B6FD2C7D51DA00E2AB87 /* ShopCategory.swift */,
+				F679D46B2C7E6EE20027714F /* ForYouItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -179,6 +199,10 @@
 			isa = PBXGroup;
 			children = (
 				F6A0B6E72C7D363400E2AB87 /* ShopView */,
+				F6FFCF972C7E42EC0029C9D2 /* StoresView */,
+				F6FFCF9A2C7E430A0029C9D2 /* ClassesView */,
+				F6FFCF9B2C7E43110029C9D2 /* WishListView */,
+				F6FFCF9C2C7E43400029C9D2 /* AccountView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -228,6 +252,41 @@
 				F6FFCF932C7E34550029C9D2 /* ForYouBottomView.swift */,
 			);
 			path = ForYouView;
+			sourceTree = "<group>";
+		};
+		F6FFCF972C7E42EC0029C9D2 /* StoresView */ = {
+			isa = PBXGroup;
+			children = (
+				F6FFCF982C7E43020029C9D2 /* StoresView.swift */,
+				F679D46D2C7E70380027714F /* SearchTextField.swift */,
+				F69A6C132C7E753500F4EC6D /* MapView.swift */,
+				F69A6C152C7E885D00F4EC6D /* ShopDetailsView.swift */,
+			);
+			path = StoresView;
+			sourceTree = "<group>";
+		};
+		F6FFCF9A2C7E430A0029C9D2 /* ClassesView */ = {
+			isa = PBXGroup;
+			children = (
+				F6FFCF9D2C7E43730029C9D2 /* ClassesView.swift */,
+			);
+			path = ClassesView;
+			sourceTree = "<group>";
+		};
+		F6FFCF9B2C7E43110029C9D2 /* WishListView */ = {
+			isa = PBXGroup;
+			children = (
+				F6FFCF9F2C7E43820029C9D2 /* WishlistView.swift */,
+			);
+			path = WishListView;
+			sourceTree = "<group>";
+		};
+		F6FFCF9C2C7E43400029C9D2 /* AccountView */ = {
+			isa = PBXGroup;
+			children = (
+				F6FFCFA12C7E438F0029C9D2 /* AccountView.swift */,
+			);
+			path = AccountView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,20 +420,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6A0B6E92C7D365600E2AB87 /* ShopView.swift in Sources */,
+				F679D46E2C7E70380027714F /* SearchTextField.swift in Sources */,
 				F6A0B6FE2C7D51DA00E2AB87 /* ShopCategory.swift in Sources */,
 				F6A0B6EC2C7D3B6400E2AB87 /* HelloView.swift in Sources */,
 				F6A0B7002C7D935C00E2AB87 /* ForYouListView.swift in Sources */,
 				F6A0B6B82C7D33E000E2AB87 /* ContentView.swift in Sources */,
 				F6A0B6F52C7D446C00E2AB87 /* Extensions.swift in Sources */,
+				F6FFCF992C7E43020029C9D2 /* StoresView.swift in Sources */,
 				F6A0B6F92C7D486700E2AB87 /* CategoryCarouselRowItemView.swift in Sources */,
+				F69A6C142C7E753500F4EC6D /* MapView.swift in Sources */,
 				F6A0B6EE2C7D3C0700E2AB87 /* QRButton.swift in Sources */,
+				F69A6C162C7E885D00F4EC6D /* ShopDetailsView.swift in Sources */,
 				F6FFCF962C7E3B160029C9D2 /* ForYouView.swift in Sources */,
+				F679D46C2C7E6EE20027714F /* ForYouItem.swift in Sources */,
 				F6A0B6F02C7D425100E2AB87 /* ShopVM.swift in Sources */,
 				F6FFCF942C7E34550029C9D2 /* ForYouBottomView.swift in Sources */,
 				F6A0B6B62C7D33E000E2AB87 /* LululemonApp.swift in Sources */,
+				F6FFCFA42C7E54E90029C9D2 /* Common.swift in Sources */,
+				F6FFCFA22C7E438F0029C9D2 /* AccountView.swift in Sources */,
+				F6FFCFA02C7E43820029C9D2 /* WishlistView.swift in Sources */,
 				F6A0B6F72C7D44E400E2AB87 /* SystemFont.swift in Sources */,
 				F6A0B6F32C7D435C00E2AB87 /* CategoryCarouselRowListView.swift in Sources */,
 				F6A0B6FC2C7D511F00E2AB87 /* ForYouListItemView.swift in Sources */,
+				F6FFCF9E2C7E43730029C9D2 /* ClassesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

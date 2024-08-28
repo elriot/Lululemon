@@ -8,17 +8,58 @@
 import SwiftUI
 
 struct ShopView: View {
+    init() {
+        configureNavigationBarAppearance()
+    }
+    
     var body: some View {
-        VStack(alignment: .center, spacing: 50, content: {
-            HelloView()
+        NavigationView {
+            ScrollView(.vertical) {
 
-            QRButton()
-
-            CategoryCarouselRowListView()
-            Spacer()
-        })
-        .padding()
-        
+                VStack(alignment: .center, spacing: 50, content: {
+                    
+                    HelloView()
+                    
+                    QRButton()
+                    
+                    CategoryCarouselRowListView()
+//                    Spacer()
+                })
+                .padding()
+            }
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Image("logo")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(maxWidth: 30, maxHeight: 30)
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        print("qrcode.viewfinder")
+                    }) {
+                        Image(systemName: "qrcode.viewfinder")
+                    }
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        print("magnifyingglass")
+                    }) {
+                        Image(systemName: "magnifyingglass")
+                    }
+                }
+                
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        print("bag")
+                    }) {
+                        Image(systemName: "bag")
+                    }
+                }
+            }
+            .foregroundColor(.black)
+        }
     }
 }
 
