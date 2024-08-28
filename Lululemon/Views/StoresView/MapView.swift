@@ -19,6 +19,7 @@ struct MapView: View {
     @State private var routeDisplaying = false
     @State private var route: MKRoute?
     @State private var routeDestination: MKMapItem?
+    @State private var defaultResults = [MKMapItem]()
     
     var body: some View {
         Map(position: $cameraPosition, selection: $mapSelection) {
@@ -89,6 +90,9 @@ struct MapView: View {
         .onAppear {
             Task {
                 await searchPlaces()
+                if defaultResults.isEmpty {
+                    defaultResults = results
+                }
 //                dump("result 2 : \(results)")
             }
         }
@@ -98,8 +102,33 @@ struct MapView: View {
                 .presentationBackgroundInteraction(.enabled(upThrough: .height(400)))
                 .presentationCornerRadius(12)
         })
-
-
+        .overlay {
+            if routeDisplaying {
+                VStack {
+                    Spacer()
+                    Button {
+                        resetDestination()
+                    } label: {
+                        ZStack {
+                            Rectangle()
+                                .frame(height: 50)
+                                .foregroundColor(.luluRed)
+                                .cornerRadius(10)
+                            
+                            HStack {
+                                Image(systemName: "x.circle")
+                                    .foregroundColor(.white)
+                                Text("Exit")
+                                    .font(SystemFont.BasicFont)
+                                    .fontWeight(.bold)
+                                    .foregroundStyle(.white)
+                            }
+                        }
+                    }
+                    .padding()
+                }
+            }
+        }
     }
 }
 //private func routeAnnotation(for item: MKMapItem) -> some View {
@@ -136,13 +165,11 @@ struct MapView: View {
 
 extension MapView {
     func searchPlaces() async {
-//        print("searchPlaces")
         let request = MKLocalSearch.Request()
         request.naturalLanguageQuery = searchText
         request.region = .userRegion
         let results = try? await MKLocalSearch(request: request).start()
         self.results = results?.mapItems ?? []
-//        dump(self.results)
     }
     
     func fetchRoute() {
@@ -166,6 +193,14 @@ extension MapView {
                 }
             }
         }
+    }
+    
+    func resetDestination() {
+        routeDisplaying = false
+        route = nil
+        routeDestination = nil
+        results = defaultResults
+        mapSelection = nil
     }
 }
 extension CLLocationCoordinate2D {
