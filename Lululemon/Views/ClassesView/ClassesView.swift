@@ -33,7 +33,10 @@ struct ClassesView: View {
                             .lineLimit(nil)
                     }
                     
-                    VStack(alignment: .leading, spacing: 5) {
+
+                    ClassesListView(level: Level.begginer)
+                    
+                    VStack(alignment: .leading, spacing: 20) {
                         Text("Looking for more?")
                             .font(SystemFont.AppFont)
                             .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
@@ -54,6 +57,8 @@ struct ClassesView: View {
                             .font(SystemFont.semiBasicFont)
                             .padding()
                     }
+                
+                
                 }
             }
 
