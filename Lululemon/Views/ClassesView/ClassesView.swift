@@ -15,7 +15,7 @@ struct ClassesView: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                VStack(alignment: .leading, spacing: 20) {
+                VStack(alignment: .leading, spacing: 30) {
                     Image("peleton")
                         .resizable()
                         .scaledToFit()
@@ -33,8 +33,9 @@ struct ClassesView: View {
                             .lineLimit(nil)
                     }
                     
-
-                    ClassesListView(level: Level.begginer)
+                    ClassesListView()
+                        
+                    
                     
                     VStack(alignment: .leading, spacing: 20) {
                         Text("Looking for more?")

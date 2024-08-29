@@ -8,63 +8,36 @@
 import SwiftUI
 
 struct ClassesListView: View {
-    let level: Level
-    var imageColor: Color {
-        switch level {
-        case .begginer:
-            return .green
-        case .intermediate:
-            return .yellow
-        case .advanced:
-            return .red
+    var body: some View {
+        #if DEBUG
+        ScrollView {
+            content
         }
-    }
-    var levelText: String {
-        switch level {
-        case .begginer:
-            return "begginer".uppercased()
-        case .intermediate:
-            return "intermediate".uppercased()
-        case .advanced:
-            return "advanced".uppercased()
-        }
+        #else
+        content
+        #endif
     }
     
-    var body: some View {
-        VStack(alignment: .leading, spacing: 20) {
-            Button {
+    var content: some View {
+        VStack {
+            VStack(spacing: 20) {
+                ClassesListViewItem(level: .begginer, img: "classes01", title: "30 min Interval Running", lecturer: "Soopin Kim", classCategory: "Running")
+                    .padding(.horizontal)
                 
-            } label: {
-                GeometryReader { geometry in
-                    Image("classes00")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: geometry.size.width, height: geometry.size.width * 3 / 4) // 4:3 비율
-                        .clipShape(RoundedRectangle(cornerRadius: 10))
-                    
-                    HStack {
-                            Image(systemName: "circle.fill")
-                            .foregroundColor(imageColor)
-                        
-                            Text(levelText)
-                            .font(SystemFont.semiBasicFont)
-                            .fontWeight(.semibold)
-                                .foregroundColor(.white)
-                                
-                    }
-                    .padding(EdgeInsets(top: 5, leading: 15, bottom: 5, trailing: 15))
-                    .background(
-                        RoundedRectangle(cornerRadius: 50)
-                            .foregroundColor(.black.opacity(0.7))
-                    )
-                    .offset(x:10, y:10)
-                }
+                ClassesListViewItem(level: .intermediate, img: "classes00", title: "20 min Yin Yoga", lecturer: "Chealsea Jackson Robers", classCategory: "Yoga")
+                    .padding(.horizontal)
+                
+                ClassesListViewItem(level: .advanced, img: "classes02", title: "19 min Deep Relaxation Meditation", lecturer: "Denis Morton", classCategory: "Meditation")
+                    .padding(.horizontal)
             }
-            .frame(width: .infinity, height: 300)
+            .padding(EdgeInsets(top: 50, leading: 0, bottom: 10, trailing: 0))
         }
+        .background(.lightGray)
+        
+
     }
 }
 
 #Preview {
-    ClassesListView(level: Level.advanced)
+    ClassesListView()
 }
