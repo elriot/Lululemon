@@ -11,6 +11,9 @@
 		F679D46E2C7E70380027714F /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F679D46D2C7E70380027714F /* SearchTextField.swift */; };
 		F69A6C142C7E753500F4EC6D /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A6C132C7E753500F4EC6D /* MapView.swift */; };
 		F69A6C162C7E885D00F4EC6D /* ShopDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A6C152C7E885D00F4EC6D /* ShopDetailsView.swift */; };
+		F69C7BE82C80E9EC00954369 /* ClassesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69C7BE72C80E9EC00954369 /* ClassesListView.swift */; };
+		F69C7BEA2C81187400954369 /* ClassesListViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69C7BE92C81187400954369 /* ClassesListViewItem.swift */; };
+		F69C7BEC2C826C8400954369 /* ClassesButtomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69C7BEB2C826C8400954369 /* ClassesButtomView.swift */; };
 		F6A0B6B62C7D33E000E2AB87 /* LululemonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6B52C7D33E000E2AB87 /* LululemonApp.swift */; };
 		F6A0B6B82C7D33E000E2AB87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0B6B72C7D33E000E2AB87 /* ContentView.swift */; };
 		F6A0B6BA2C7D33E100E2AB87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6A0B6B92C7D33E100E2AB87 /* Assets.xcassets */; };
@@ -60,6 +63,9 @@
 		F679D46D2C7E70380027714F /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 		F69A6C132C7E753500F4EC6D /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		F69A6C152C7E885D00F4EC6D /* ShopDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDetailsView.swift; sourceTree = "<group>"; };
+		F69C7BE72C80E9EC00954369 /* ClassesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesListView.swift; sourceTree = "<group>"; };
+		F69C7BE92C81187400954369 /* ClassesListViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesListViewItem.swift; sourceTree = "<group>"; };
+		F69C7BEB2C826C8400954369 /* ClassesButtomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesButtomView.swift; sourceTree = "<group>"; };
 		F6A0B6B22C7D33E000E2AB87 /* Lululemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lululemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A0B6B52C7D33E000E2AB87 /* LululemonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LululemonApp.swift; sourceTree = "<group>"; };
 		F6A0B6B72C7D33E000E2AB87 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -269,6 +275,9 @@
 			isa = PBXGroup;
 			children = (
 				F6FFCF9D2C7E43730029C9D2 /* ClassesView.swift */,
+				F69C7BE72C80E9EC00954369 /* ClassesListView.swift */,
+				F69C7BE92C81187400954369 /* ClassesListViewItem.swift */,
+				F69C7BEB2C826C8400954369 /* ClassesButtomView.swift */,
 			);
 			path = ClassesView;
 			sourceTree = "<group>";
@@ -422,14 +431,17 @@
 				F6A0B6E92C7D365600E2AB87 /* ShopView.swift in Sources */,
 				F679D46E2C7E70380027714F /* SearchTextField.swift in Sources */,
 				F6A0B6FE2C7D51DA00E2AB87 /* ShopCategory.swift in Sources */,
+				F69C7BEC2C826C8400954369 /* ClassesButtomView.swift in Sources */,
 				F6A0B6EC2C7D3B6400E2AB87 /* HelloView.swift in Sources */,
 				F6A0B7002C7D935C00E2AB87 /* ForYouListView.swift in Sources */,
+				F69C7BE82C80E9EC00954369 /* ClassesListView.swift in Sources */,
 				F6A0B6B82C7D33E000E2AB87 /* ContentView.swift in Sources */,
 				F6A0B6F52C7D446C00E2AB87 /* Extensions.swift in Sources */,
 				F6FFCF992C7E43020029C9D2 /* StoresView.swift in Sources */,
 				F6A0B6F92C7D486700E2AB87 /* CategoryCarouselRowItemView.swift in Sources */,
 				F69A6C142C7E753500F4EC6D /* MapView.swift in Sources */,
 				F6A0B6EE2C7D3C0700E2AB87 /* QRButton.swift in Sources */,
+				F69C7BEA2C81187400954369 /* ClassesListViewItem.swift in Sources */,
 				F69A6C162C7E885D00F4EC6D /* ShopDetailsView.swift in Sources */,
 				F6FFCF962C7E3B160029C9D2 /* ForYouView.swift in Sources */,
 				F679D46C2C7E6EE20027714F /* ForYouItem.swift in Sources */,
