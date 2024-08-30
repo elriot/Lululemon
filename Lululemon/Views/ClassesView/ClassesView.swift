@@ -41,23 +41,14 @@ struct ClassesView: View {
                         Text("Looking for more?")
                             .font(SystemFont.AppFont)
                             .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                            .padding()
                         
                         Text("Try the Peleton App for free and unlock thousnads of classes with lululemon Membership's newest benefit: Parter perks.")
                             .font(SystemFont.semiBasicFont)
-                            .padding()
+                            
                     }
-
-                    VStack(alignment: .leading, spacing: 5) {
-                        Text("Looking for more?")
-                            .font(SystemFont.AppFont)
-                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                            .padding()
-                        
-                        Text("Try the Peleton App for free and unlock thousnads of classes with lululemon Membership's newest benefit: Parter perks.")
-                            .font(SystemFont.semiBasicFont)
-                            .padding()
-                    }
+                    .padding()
+                    
+                    ClassesButtomView()
                 
                 
                 }
