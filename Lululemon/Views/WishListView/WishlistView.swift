@@ -21,6 +21,8 @@ struct WishlistView: View {
                 WishListMiddleView()
                 
                 WishListCountView(cartCount: cartCount)
+                
+                CreateNewWishListButton()
                 Spacer()
             }
             
