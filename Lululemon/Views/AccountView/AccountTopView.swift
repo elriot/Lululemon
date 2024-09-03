@@ -10,7 +10,7 @@ import SwiftUI
 struct AccountTopView: View {
 
     var body: some View {
-        VStack(alignment: .center) {
+        VStack(alignment: .center, spacing: 20) {
             VStack(alignment: .leading) {
                 HStack {
                     Text("Discover lululemon")
@@ -44,9 +44,56 @@ struct AccountTopView: View {
             .foregroundColor(.darkgray)
             .padding(EdgeInsets(top: 10, leading: 20, bottom: 30, trailing: 20))
             
+            // Sign In (black background , white text)
+            // Not a member yet?
+            // Create member account
+            Button {
 
+            } label: {
+                ZStack {
+                    Rectangle()
+                        .frame(height: 50)
+                        .foregroundColor(.black)
+                        .cornerRadius(10)
+                        
+                    Text("Sign In")
+                        .font(SystemFont.BasicFont)
+                        .fontWeight(.bold)
+                        .foregroundStyle(.white)
+                }
+            }
+            .padding()
+            
+            Text("Not a member yet?")
+                .font(SystemFont.BasicFont)
+                .foregroundColor(.darkgray)
+            
+            Button {
+
+            } label: {
+                ZStack {
+                    Rectangle()
+                        .frame(height: 50)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(.black, lineWidth: 1.4)
+                                .foregroundColor(.clear)
+                                
+                        }
+     
+                        
+                    Text("Create member account")
+                        .font(SystemFont.BasicFont)
+                        .fontWeight(.bold)
+                        .foregroundStyle(.black)
+                }
+            }
+            .padding(EdgeInsets(top: 0, leading: 20, bottom: 30, trailing: 20))
         }
         .background(.lightGray.opacity(0.5))
+
     }
 }
 
