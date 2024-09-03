@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		F679D46C2C7E6EE20027714F /* ForYouItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F679D46B2C7E6EE20027714F /* ForYouItem.swift */; };
 		F679D46E2C7E70380027714F /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F679D46D2C7E70380027714F /* SearchTextField.swift */; };
+		F6884DED2C87B0FE00EB52B9 /* WishListSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6884DEC2C87B0FE00EB52B9 /* WishListSignInView.swift */; };
+		F6884DEF2C87B14900EB52B9 /* WishListMiddleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6884DEE2C87B14900EB52B9 /* WishListMiddleView.swift */; };
+		F6884DF12C87B31400EB52B9 /* WishListCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6884DF02C87B31400EB52B9 /* WishListCountView.swift */; };
 		F69A6C142C7E753500F4EC6D /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A6C132C7E753500F4EC6D /* MapView.swift */; };
 		F69A6C162C7E885D00F4EC6D /* ShopDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A6C152C7E885D00F4EC6D /* ShopDetailsView.swift */; };
 		F69C7BE82C80E9EC00954369 /* ClassesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69C7BE72C80E9EC00954369 /* ClassesListView.swift */; };
@@ -61,6 +64,9 @@
 /* Begin PBXFileReference section */
 		F679D46B2C7E6EE20027714F /* ForYouItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouItem.swift; sourceTree = "<group>"; };
 		F679D46D2C7E70380027714F /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		F6884DEC2C87B0FE00EB52B9 /* WishListSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListSignInView.swift; sourceTree = "<group>"; };
+		F6884DEE2C87B14900EB52B9 /* WishListMiddleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListMiddleView.swift; sourceTree = "<group>"; };
+		F6884DF02C87B31400EB52B9 /* WishListCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListCountView.swift; sourceTree = "<group>"; };
 		F69A6C132C7E753500F4EC6D /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		F69A6C152C7E885D00F4EC6D /* ShopDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDetailsView.swift; sourceTree = "<group>"; };
 		F69C7BE72C80E9EC00954369 /* ClassesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesListView.swift; sourceTree = "<group>"; };
@@ -286,6 +292,9 @@
 			isa = PBXGroup;
 			children = (
 				F6FFCF9F2C7E43820029C9D2 /* WishlistView.swift */,
+				F6884DEC2C87B0FE00EB52B9 /* WishListSignInView.swift */,
+				F6884DEE2C87B14900EB52B9 /* WishListMiddleView.swift */,
+				F6884DF02C87B31400EB52B9 /* WishListCountView.swift */,
 			);
 			path = WishListView;
 			sourceTree = "<group>";
@@ -431,8 +440,10 @@
 				F6A0B6E92C7D365600E2AB87 /* ShopView.swift in Sources */,
 				F679D46E2C7E70380027714F /* SearchTextField.swift in Sources */,
 				F6A0B6FE2C7D51DA00E2AB87 /* ShopCategory.swift in Sources */,
+				F6884DF12C87B31400EB52B9 /* WishListCountView.swift in Sources */,
 				F69C7BEC2C826C8400954369 /* ClassesButtomView.swift in Sources */,
 				F6A0B6EC2C7D3B6400E2AB87 /* HelloView.swift in Sources */,
+				F6884DED2C87B0FE00EB52B9 /* WishListSignInView.swift in Sources */,
 				F6A0B7002C7D935C00E2AB87 /* ForYouListView.swift in Sources */,
 				F69C7BE82C80E9EC00954369 /* ClassesListView.swift in Sources */,
 				F6A0B6B82C7D33E000E2AB87 /* ContentView.swift in Sources */,
@@ -451,6 +462,7 @@
 				F6FFCFA42C7E54E90029C9D2 /* Common.swift in Sources */,
 				F6FFCFA22C7E438F0029C9D2 /* AccountView.swift in Sources */,
 				F6FFCFA02C7E43820029C9D2 /* WishlistView.swift in Sources */,
+				F6884DEF2C87B14900EB52B9 /* WishListMiddleView.swift in Sources */,
 				F6A0B6F72C7D44E400E2AB87 /* SystemFont.swift in Sources */,
 				F6A0B6F32C7D435C00E2AB87 /* CategoryCarouselRowListView.swift in Sources */,
 				F6A0B6FC2C7D511F00E2AB87 /* ForYouListItemView.swift in Sources */,

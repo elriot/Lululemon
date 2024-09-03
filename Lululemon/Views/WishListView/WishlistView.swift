@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct WishlistView: View {
-    
+    @State private var cartCount = 0
     init() {
         configureNavigationBarAppearance()
     }
@@ -16,53 +16,14 @@ struct WishlistView: View {
     var body: some View {
         NavigationView {
             VStack {
-                HStack {
-                    Button {
-                        
-                    } label: {
-                        HStack {
-                            Text("Already have a wishlist?")
-                                .fontWeight(.bold)
-                            
-                            
-                            Spacer()
-                            
-                            Text("Sign In")
-                            Image(systemName: "chevron.right")
-                                .fontWeight(.semibold)
-                        }
-                        
-                    }
-                    .font(SystemFont.BasicFont)
-                    .buttonStyle(DefaultButtonStyle())
-                }
-                .padding()
-                .overlay(
-                    Rectangle()
-                        .frame(height: 1)
-                        .foregroundColor(.lightGray),
-                    alignment: .bottom
-                )
+                WishListSignInView()
                 
-                VStack {
-                    HStack(alignment: .center) {
-                        Text("Your wish is")
-                        Spacer()
-                    }
-                    
-                    HStack(alignment: .center) {
-                        Text("our command.")
-                        Spacer()
-                    }
-                    
-                }
-                .font(SystemFont.AppFont)
-                .fontWeight(.bold)
-                .padding(EdgeInsets(top: 50, leading: 20, bottom: 50, trailing: 20))
+                WishListMiddleView()
                 
-                
+                WishListCountView(cartCount: cartCount)
                 Spacer()
             }
+            
             .foregroundColor(.black)
             .navigationTitle("Wish List")
             .navigationBarTitleDisplayMode(.inline)
