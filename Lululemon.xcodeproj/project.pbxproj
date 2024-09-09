@@ -14,6 +14,7 @@
 		F6884DF12C87B31400EB52B9 /* WishListCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6884DF02C87B31400EB52B9 /* WishListCountView.swift */; };
 		F6884DF32C87B5E800EB52B9 /* CreateNewWishListButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6884DF22C87B5E800EB52B9 /* CreateNewWishListButton.swift */; };
 		F6884DF52C87BBC600EB52B9 /* AccountTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6884DF42C87BBC600EB52B9 /* AccountTopView.swift */; };
+		F6884DF92C8FBBC700EB52B9 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6884DF82C8FBBC700EB52B9 /* SignInView.swift */; };
 		F69A6C142C7E753500F4EC6D /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A6C132C7E753500F4EC6D /* MapView.swift */; };
 		F69A6C162C7E885D00F4EC6D /* ShopDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A6C152C7E885D00F4EC6D /* ShopDetailsView.swift */; };
 		F69C7BE82C80E9EC00954369 /* ClassesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69C7BE72C80E9EC00954369 /* ClassesListView.swift */; };
@@ -71,6 +72,7 @@
 		F6884DF02C87B31400EB52B9 /* WishListCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListCountView.swift; sourceTree = "<group>"; };
 		F6884DF22C87B5E800EB52B9 /* CreateNewWishListButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewWishListButton.swift; sourceTree = "<group>"; };
 		F6884DF42C87BBC600EB52B9 /* AccountTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTopView.swift; sourceTree = "<group>"; };
+		F6884DF82C8FBBC700EB52B9 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		F69A6C132C7E753500F4EC6D /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		F69A6C152C7E885D00F4EC6D /* ShopDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDetailsView.swift; sourceTree = "<group>"; };
 		F69C7BE72C80E9EC00954369 /* ClassesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesListView.swift; sourceTree = "<group>"; };
@@ -131,6 +133,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F6884DF72C8FBB9600EB52B9 /* SignInView */ = {
+			isa = PBXGroup;
+			children = (
+				F6884DF82C8FBBC700EB52B9 /* SignInView.swift */,
+			);
+			path = SignInView;
+			sourceTree = "<group>";
+		};
 		F6A0B6A92C7D33E000E2AB87 = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +229,7 @@
 				F6FFCF9A2C7E430A0029C9D2 /* ClassesView */,
 				F6FFCF9B2C7E43110029C9D2 /* WishListView */,
 				F6FFCF9C2C7E43400029C9D2 /* AccountView */,
+				F6884DF72C8FBB9600EB52B9 /* SignInView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -452,6 +463,7 @@
 				F6884DED2C87B0FE00EB52B9 /* WishListSignInView.swift in Sources */,
 				F6A0B7002C7D935C00E2AB87 /* ForYouListView.swift in Sources */,
 				F69C7BE82C80E9EC00954369 /* ClassesListView.swift in Sources */,
+				F6884DF92C8FBBC700EB52B9 /* SignInView.swift in Sources */,
 				F6A0B6B82C7D33E000E2AB87 /* ContentView.swift in Sources */,
 				F6884DF52C87BBC600EB52B9 /* AccountTopView.swift in Sources */,
 				F6A0B6F52C7D446C00E2AB87 /* Extensions.swift in Sources */,
