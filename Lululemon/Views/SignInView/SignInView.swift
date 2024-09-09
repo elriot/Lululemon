@@ -8,31 +8,56 @@
 import SwiftUI
 
 struct SignInView: View {
-    init() {
+    @Binding var isPresented: Bool
+
+    init(isPresented: Binding<Bool>) {
+        self._isPresented = isPresented
         configureNavigationBarAppearance()
     }
     
     var body: some View {
-        NavigationView {
-            VStack {
-                Text("This is SignIn View")
-            }
-            .navigationTitle("Account")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Button(action: {
-                        print("qrcode.viewfinder")
-                    }) {
-                        Image(systemName: "xmark")
-                            .foregroundColor(.black)
-                    }
+        VStack {
+            HStack {
+                Spacer()
+                Button(action: {
+                    isPresented = false 
+                }) {
+                    Image(systemName: "xmark")
+                        .foregroundColor(.black)
+                        .padding()
                 }
             }
-        }
 
-    }}
+            Spacer()
+            Text("Sign In View")
+                .font(.largeTitle)
+            Spacer()
+        }
+        .background(Color.white)
+        .edgesIgnoringSafeArea(.all)  
+    }
+//    var body: some View {
+//        NavigationView {
+//            VStack {
+//                Text("This is SignIn View")
+//            }
+//            .navigationTitle("Account")
+//            .navigationBarTitleDisplayMode(.inline)
+//            .toolbar {
+//                ToolbarItem(placement: .navigationBarLeading) {
+//                    Button(action: {
+//                        print("qrcode.viewfinder")
+//                    }) {
+//                        Image(systemName: "xmark")
+//                            .foregroundColor(.black)
+//                    }
+//                }
+//            }
+//        }
+//        
+//    }
+}
 
 #Preview {
-    SignInView()
+    SignInView(isPresented: .constant(true))
 }
