@@ -8,8 +8,22 @@
 import SwiftUI
 
 struct AccountView: View {
+    init() {
+        configureNavigationBarAppearance()
+    }
+    
     var body: some View {
-        Text("AccountView")
+        NavigationView {
+            VStack {
+                AccountTopView()
+                
+                Spacer()
+            }
+            .navigationTitle("Account")
+            .navigationBarTitleDisplayMode(.inline)
+            
+        }
+
     }
 }
 
