@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AccountTopView: View {
-
+    @State var isPresentingNewView = false
     var body: some View {
         VStack(alignment: .center, spacing: 20) {
             VStack(alignment: .leading) {
@@ -48,7 +48,7 @@ struct AccountTopView: View {
             // Not a member yet?
             // Create member account
             Button {
-
+                isPresentingNewView = true
             } label: {
                 ZStack {
                     Rectangle()
@@ -63,6 +63,9 @@ struct AccountTopView: View {
                 }
             }
             .padding()
+            .fullScreenCover(isPresented: $isPresentingNewView) {
+//                        ShopView()
+            }
             
             Text("Not a member yet?")
                 .font(SystemFont.BasicFont)
